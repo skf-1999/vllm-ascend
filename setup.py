@@ -113,7 +113,7 @@ def get_chip_type() -> str:
 
 envs = load_module_from_path("envs", os.path.join(ROOT_DIR, "vllm_ascend", "envs.py"))
 
-soc_version = get_chip_type()
+soc_version = ""
 
 if not envs.SOC_VERSION:
     if not soc_version:

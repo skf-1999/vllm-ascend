@@ -129,7 +129,7 @@ def build_fused_experts_input(
     log2phy: torch.Tensor | None = None,
     pertoken_scale: torch.Tensor | None = None,
     activation: str = "silu",
-    need_trans: bool = False,
+    need_trans: bool = True,
     w1_bias: torch.Tensor | None = None,
     w2_bias: torch.Tensor | None = None,
     comm_quant_mode: int | None = None,
